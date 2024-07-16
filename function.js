@@ -378,8 +378,60 @@
 
 //Bodlogo-10: 9 usegtei string-iig ol.
 
-const strings = ["apple", "banana", "cherry", "blueberry", "date"];
+// const strings = ["apple", "banana", "cherry", "blueberry", "date"];
 
-const filtered = strings.filter((item) => item[0] === "b");
+// // const filtered = strings.filter((item) => item[0] === "b");
 
-console.log(filtered);
+// const filtered = strings.find((item) => item.length === 9);
+
+// console.log(filtered);
+
+//2024.07.16
+
+//Boglogo-1.
+
+// const arr = [
+//   ["Alice", 30],
+//   ["Bod", 25],
+//   ["John", 54],
+// ];
+
+// const ner = [];
+// const nas = [];
+
+// arr.forEach((person) => {
+//   person.forEach((item) => {
+//     if (typeof item === "string") {
+//       ner.push(item);
+//     } else {
+//       nas.push(item);
+//     }
+//   });
+// });
+// console.log({ ner, nas });
+
+//Boglogo-2.
+
+// const data = [
+//   ["Bod", 25],
+//   ["John", 54],
+//   ["Alice", 30],
+// ];
+
+// let ageIndex, foundItem, itemId;
+
+// data.forEach((item, id) => {
+//   if (typeof item === "number" && item === 30) {
+//     nas.push(item);
+//     //   ner.push(arr[index - 1]);
+//     //   ind.push(index - 1);
+//   }
+// });
+
+// // console.log({ ner, nas, ind });
+// console.log(arr[ind], ind);
+
+// const arr1 = arr.findIndex((item) => item === 30);
+// const ner = arr1.find((item) => item === 30);
+
+// console.log(arr1);
