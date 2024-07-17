@@ -421,17 +421,82 @@
 // let ageIndex, foundItem, itemId;
 
 // data.forEach((item, id) => {
-//   if (typeof item === "number" && item === 30) {
-//     nas.push(item);
-//     //   ner.push(arr[index - 1]);
-//     //   ind.push(index - 1);
-//   }
+//   item.forEach((el, index, arr) => {
+//     if (el === 30) {
+//       ageIndex = index;
+//       foundItem = arr;
+//       itemId = id;
+//     }
+//   });
 // });
 
-// // console.log({ ner, nas, ind });
-// console.log(arr[ind], ind);
+// const username = foundItem.find((item) => typeof item === "string");
 
-// const arr1 = arr.findIndex((item) => item === 30);
-// const ner = arr1.find((item) => item === 30);
+// console.log(ageIndex, username, itemId);
 
-// console.log(arr1);
+//Boglogo-3.
+
+// const data = ["abcd", "xyz", "1234"];
+// data.forEach((item) => {
+//   console.log(item.split("").reverse().join(""));
+// });
+
+//Boglogo-4.
+
+// 1,2,3,4,
+// n*(n+1)/2
+
+// const data = [3, 7, 1, 2, 8, 4, 6];
+// let sum = 0;
+// const n = data.length + 1;
+
+// data.forEach((item) => {
+//   sum = sum + item;
+//   dutuuToo = (n * (n + 1)) / 2 - sum;
+// });
+// console.log(dutuuToo, sum, n);
+
+//Boglogo-5.
+
+// const data = ["apple", "banana", "apricot", "cherry"];
+
+// const fruits = data.filter((item) => item[0] === "a");
+
+// console.log(fruits);
+
+//Obiekt
+//Bodlogo-1.
+
+// const items = [
+//   { name: "item1", price: 30 },
+//   { name: "item2", price: 20 },
+//   { name: "item3", price: 50 },
+// ];
+
+// const sum = items.reduce((acc, item) => acc + item.price, 0);
+
+// console.log(sum);
+
+//Bodlogo-2.
+
+// const books = [
+//   { title: "Book1", author: "Author1" },
+//   { title: "Book2", author: "Author2" },
+//   { title: "Book3", author: "Author3" },
+// ];
+
+// const zohiolch = books.map((a) => a.author);
+
+// console.log(zohiolch);
+
+//Bodlogo-3.
+
+const users = [
+  { id: 1, name: "Alice" },
+  { id: 2, name: "Bob" },
+  { id: 3, name: "Charlie" },
+];
+
+const zohiolch = users.find((a) => a.name === "Bob");
+
+console.log(zohiolch);
