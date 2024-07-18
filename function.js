@@ -491,12 +491,60 @@
 
 //Bodlogo-3.
 
-const users = [
-  { id: 1, name: "Alice" },
-  { id: 2, name: "Bob" },
-  { id: 3, name: "Charlie" },
+// const users = [
+//   { id: 1, name: "Alice" },
+//   { id: 2, name: "Bob" },
+//   { id: 3, name: "Charlie" },
+// ];
+
+// const zohiolch = users.find((a) => a.name === "Bob");
+
+// console.log(zohiolch);
+
+//2024.07.18
+//Bodlogo-1.
+
+// data structure:
+// string
+// Number
+// boolean
+// Array
+// Object
+// undefined
+// OOP
+
+// //Bodlogo-1.
+
+const students = [
+  { name: "Alice", grade: 85 },
+  { name: "Bob", grade: 59 },
+  { name: "Charlie", grade: 72 },
 ];
 
-const zohiolch = users.find((a) => a.name === "Bob");
+const dund = students.filter((a) => a.grade >= 60);
 
-console.log(zohiolch);
+console.log(a.name);
+
+//Bodlogo-2.a.
+
+// const peaple1 = [
+//   { firstname: "Alice", lastname: "Doe" },
+//   { firstname: "Bob", lastname: "Smith" },
+//   { firstname: "Charlie", lastname: "Jones" },
+// ];
+// const fullname1 = peaple1.map((a) => a.firstname + " " + a.lastname);
+
+// console.log(fullname1);
+
+// //Bodlogo-2.b.
+
+// const peaple = [
+//   { firstname: "Alice", lastname: "Doe" },
+//   { firstname: "Bob", lastname: "Smith" },
+//   { firstname: "Charlie", lastname: "Jones" },
+// ];
+// const fullnames = peaple.map(
+//   ({ firstname, lastname }) => `${firstname} ${lastname}`
+// );
+
+// console.log(fullnames);
