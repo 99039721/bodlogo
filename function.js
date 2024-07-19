@@ -515,15 +515,15 @@
 
 // //Bodlogo-1.
 
-const students = [
-  { name: "Alice", grade: 85 },
-  { name: "Bob", grade: 59 },
-  { name: "Charlie", grade: 72 },
-];
+// const students = [
+//   { name: "Alice", grade: 85 },
+//   { name: "Bob", grade: 59 },
+//   { name: "Charlie", grade: 72 },
+// ];
 
-const dund = students.filter((a) => a.grade >= 60);
+// const dund = students.filter((a) => a.grade >= 60);
 
-console.log(a.name);
+// console.log(a.name);
 
 //Bodlogo-2.a.
 
