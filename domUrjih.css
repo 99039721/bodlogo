@@ -1,0 +1,23 @@
+.container {
+  gap: 20px;
+  height: 100px;
+  width: 200px;
+}
+
+.urjih {
+  display: flex;
+  flex-direction: row;
+}
+
+.tentsuu {
+  border-color: blue;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.ten {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+}

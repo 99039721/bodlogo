@@ -243,3 +243,5 @@
 
 // console.log(updateEvent(3));
 // console.log(updateAppointment(2));
+
+// console.log(new Date());
