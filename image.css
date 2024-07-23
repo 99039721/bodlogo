@@ -1,0 +1,35 @@
+.zurag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: solid, 1px;
+}
+
+.nemeh {
+  font-size: 30px;
+}
+
+.hasah {
+  font-size: 30px;
+}
+
+button {
+  width: 200px;
+  height: 1000px;
+}
+
+/* img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
+#zurag {
+  width: 1000px;
+  height: 1000px;
+}
+
+.jaaz {
+  display: flex;
+  flex-direction: row;
+}
