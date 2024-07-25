@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.red {
+  width: 50%;
+  height: 300px;
+  background-color: red;
+  border-color: red;
+}
+
+.blue {
+  width: 50%;
+  height: 300px;
+  background-color: blue;
+  border-color: blue;
+}
+
+.color {
+  margin-top: 20px;
+  border: none;
+}
+
+.redNumber {
+  font-size: 50px;
+  color: red;
+}
+
+.blueNumber {
+  font-size: 50px;
+  color: blue;
+}
+
+#reset {
+  width: 100px;
+  height: 30px;
+}
+
+/* button {
+  border: none;
+} */
