@@ -40,6 +40,7 @@ blue.addEventListener("click", () => {
 });
 
 reset.addEventListener("click", () => {
+  ``;
   red.style.width = `${50}%`;
   blue.style.width = `${50}%`;
   i = 50;
