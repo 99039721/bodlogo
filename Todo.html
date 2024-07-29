@@ -30,12 +30,12 @@
           <div class="cards">
             <div class="card"></div>
           </div>
-          <div class="addcard">
-            <i class="fa-solid fa-plus"></i>
-            <div>Add card</div>
-          </div>
+
+          <button class="addCardBtn">
+            <div><i class="fa-solid fa-plus"></i> Add card</div>
+          </button>
         </div>
-        <!-- <div class="board" id="inprogress">
+        <div class="board" id="inprogress">
           <div class="board-header">
             <div>In progress</div>
             <div class="count"></div>
@@ -43,10 +43,10 @@
           <div class="cards">
             <div class="card"></div>
           </div>
-          <div class="addcard">
-            <i class="fa-solid fa-plus"></i>
-            <div>Add card</div>
-          </div>
+
+          <button class="addCardBtn">
+            <div><i class="fa-solid fa-plus"></i> Add card</div>
+          </button>
         </div>
         <div class="board" id="stuck">
           <div class="board-header">
@@ -56,10 +56,10 @@
           <div class="cards">
             <div class="card"></div>
           </div>
-          <div class="addcard">
-            <i class="fa-solid fa-plus"></i>
-            <div>Add card</div>
-          </div>
+
+          <button class="addCardBtn">
+            <div><i class="fa-solid fa-plus"></i> Add card</div>
+          </button>
         </div>
         <div class="board" id="done">
           <div class="board-header">
@@ -69,12 +69,38 @@
           <div class="cards">
             <div class="card"></div>
           </div>
-          <div class="addcard">
-            <i class="fa-solid fa-plus"></i>
-            <div>Add card</div>
-          </div>
-        </div> -->
+          <button class="addCardBtn">
+            <div><i class="fa-solid fa-plus"></i> Add card</div>
+          </button>
+        </div>
       </div>
+    </div>
+    <div class="addCard" id="addCard">
+      <div class="addTask" id="addTask">
+        <h1>Add Task</h1>
+        <p>Title</p>
+        <input type="text" class="title" id="title" />
+        <p>Description</p>
+        <input type="text" class="description" />
+        <p>Status</p>
+        <select name="status" id="status">
+          <option value="todo">To do</option>
+          <option value="inProgress">In progress</option>
+          <option value="stuck">Stuck</option>
+          <option value="done">Done</option>
+        </select>
+        <p>Priority</p>
+        <select name="priority" id="priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+        <button class="addTaskBtn" id="addTaskBtn">Add Task</button>
+      </div>
+
+      <button class="addCardBtn" id="addCardBtn">
+        <i class="fa-solid fa-plus"></i> Add card
+      </button>
     </div>
   </body>
   <script src="./Todo.js"></script>
