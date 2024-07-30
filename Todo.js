@@ -56,18 +56,75 @@ window.addEventListener("click", (event) => {
 const check = {
   title: "",
   description: "",
-  status: "",
+  taskStatus: "",
   priority: "",
 };
+
 const title = document.getElementById("title");
 const description = document.getElementById("description");
-const status = document.getElementById("status");
+const taskStatus = document.getElementById("taskStatus");
 const priority = document.getElementById("priority");
-
 const addTaskBtn = document.querySelectorAll(".addTaskBtn");
+const addTaskModalBtn = document.getElementById("addTaskModalBtn");
 
 addTaskBtn.forEach((button) => {
   button.addEventListener("click", () => {
     addCard.style.display = title.innerText;
   });
 });
+
+addTaskModalBtn.addEventListener("click", () => {
+  const cards = document.querySelectorAll(".cards");
+
+  (check.title = title.value),
+    (check.description = description.value),
+    (check.taskStatus = taskStatus.value),
+    (check.priority = priority.value);
+
+  const task = taskCreator(
+    check.title,
+    check.description,
+    check.taskStatus,
+    check.priority
+  );
+
+  switch (check.taskStatus) {
+    case "todo":
+      cards[0].innerHTML = cards[0].innerHTML + task;
+      break;
+    case "inProgress":
+      cards[1].innerHTML = cards[0].innerHTML + task;
+      break;
+    case "stuck":
+      cards[2].innerHTML = cards[0].innerHTML + task;
+      break;
+    case "done":
+      cards[3].innerHTML = cards[0].innerHTML + task;
+      break;
+  }
+
+  addCard.style.display = "none";
+});
+
+const addTask = document.getElementsByClassName("addTask")[0];
+
+const taskCreator = (title, description, taskStatus, priority) => {
+  return `
+    <div class="card">
+              <div>
+                <i class="fa-regular fa-circle-check"></i>
+              </div>
+              <div class="cardcontent">
+                <div>${title}</div>
+                <div>${description}</div>
+                <div class="cardpriority">${priority}</div>
+              </div>
+              <div class="zasah">
+                <div><i class="fa-solid fa-xmark"></i></div>
+                <div><i class="fa-solid fa-pen-to-square"></i></div>
+              </div>
+            </div>
+  `;
+};
+
+// console.log(addTask.innerText.value);
