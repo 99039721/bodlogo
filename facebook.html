@@ -9,13 +9,20 @@
   <body>
     <div>
       <h1>Facebook home page</h1>
+      <button id="signUp">Sing Up</button>
+      <button id="logIn">Log In</button>
     </div>
   </body>
-
   <script>
-    const isLoggedIn = window.localStorage.getItem("token");
-    if (!isLoggedIn) {
+    const signUpBtn = document.getElementById("signUp");
+    const logInBtn = document.getElementById("logIn");
+
+    signUpBtn.addEventListener("click", () => {
+      window.location.href = "./facebook-signup.html";
+    });
+
+    logInBtn.addEventListener("click", () => {
       window.location.href = "./facebook-login.html";
-    }
+    });
   </script>
 </html>

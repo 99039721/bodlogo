@@ -12,32 +12,42 @@
 //   window.localStorage.setItem("password", text);
 // };
 
-const email = document.getElementById("email");
-const passport = document.getElementById("passport");
-const logIn = document.getElementById("logIn");
-
-email.addEventListener("keyup", () => {
-  const emails = window.localStorage.getItem("emails");
-
-  if (email.value.length >= 23) {
-    itemContainer.innerHTML = "";
-  }
-
-  if (email.value.length >= 24) {
-    if (email.value == emails) {
-      itemContainer.innerHTML = "Success";
-    } else {
-      itemContainer.innerHTML = "Error, otp is not correct";
-    }
-  }
-});
-
-// logIn.addEventListener("click", () => {
-//   const passports = window.localStorage.getItem("passport");
+// email.addEventListener("keyup", () => {
 //   const emails = window.localStorage.getItem("emails");
-//   if (email.value === emails && passport.value === passports) {
-//     itemContainer.innerHTML = "Success";
-//   } else {
-//     itemContainer.innerHTML = "Error, otp is not correct";
+
+//   if (email.value.length >= 23) {
+//     itemContainer.innerHTML = "";
+//   }
+
+//   if (email.value.length >= 24) {
+//     if (email.value == emails) {
+//       itemContainer.innerHTML = "Success";
+//     } else {
+//       itemContainer.innerHTML = "Error, otp is not correct";
+//     }
 //   }
 // });
+
+const userName = document.getElementById("userName");
+const password = document.getElementById("password");
+const button = document.getElementById("logIn");
+
+button.addEventListener("click", () => {
+  if (!userName.value || !password.value) {
+    alert("fill the inputs");
+    return;
+  }
+
+  const passwords = window.localStorage.getItem(userName.value);
+
+  if (!passwords) {
+    alert("password or user wrong");
+    return;
+  }
+
+  if (password.value == passwords) {
+    alert("Successfully logged in");
+    window.localStorage.getItem(userName.value);
+    window.location.href = "./facebook-home.html";
+  }
+});
