@@ -9,18 +9,23 @@
   height: 900px;
   display: flex;
   justify-content: center;
+  gap: 20px;
 }
 
 .mobile {
-  width: 250px;
+  width: 300px;
   height: fit-content;
   background-color: black;
   border-radius: 10px;
   /* overflow: scroll; */
   color: white;
+  gap: 20px;
 }
 .weatherBoxes {
+  width: 300px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
 }
@@ -52,6 +57,7 @@
   display: flex;
   justify-content: space-between;
   color: rgb(175, 173, 173);
+  margin-left: 25px;
 }
 
 input {
@@ -75,4 +81,8 @@ input {
 
 .tempratur {
   font-size: 40px;
+}
+
+h2 {
+  margin-left: 25px;
 }

@@ -33,7 +33,7 @@ const weathers = [
     time: new Date().toLocaleTimeString("en-AU"),
   },
   {
-    city: "Paris",
+    city: "Ulaanbaatar",
     temperature: 25,
     weather: "Clear",
     day: "night",
